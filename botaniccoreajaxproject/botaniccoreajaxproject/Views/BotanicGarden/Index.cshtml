@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<button class="btn btn-sm btn-primary m-2" id="btnAddBotanicGarden">Add Botanic Garden </button>
+
+<table class="table table-bordered">
+    <thead>
+        <tr class="text-center">
+            <th>GardenId</th>
+            <th>GardenName</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Operation</th>
+        </tr>
+    </thead>
+    <tbody class="text-center" id="table_data"></tbody>
+</table>
+<div class="madal fade modal" id="BotanicGardenModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="text-info modal-title" id="BotanicGHeading">Add Botanic Garden</h1>
+                <button class="close text-danger" onclick="HideModalPopUp();" data-dismiss="modal">&times;</button> @* çarpı işaretini veren buton *@
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="form-group" id="botId">
+                        <label>GardenId</label>
+                        <input type="text" class="form-control" id="GardenId" disabled="disabled" />
+                    </div>
+                    <div class="form-group">
+                        <label>GardenName</label>
+                        <input type="text" placeholder="Enter Garden Name" class="form-control" id="GardenName" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" placeholder="Enter Address" class="form-control" id="Address" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="Enter Phone Number" class="form-control" id="Phone" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" placeholder="Enter Email" class="form-control" id="Email" autocomplete="off" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="AddBotanicG();" id="AddBotanicG">Save</button>
+                <button class="btn btn-warning" onclick="UpdateBotanicG();" style="display:none" id="btnUpdateBotanicG">Update</button>
+                <button class="btn btn-danger btn-default" onclick="HideModalPopUp();" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <input type="hidden" id="urlBotanicData" value="@Url.Action("BotanicGList","BotanicGarden")" />
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/botaniccrud.js"></script>
