@@ -193,6 +193,10 @@
       "PackagePath": "staticwebassets\\js\\botaniccrud.js"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\wwwroot\\js\\plantscrud.js",
+      "PackagePath": "staticwebassets\\js\\plantscrud.js"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

@@ -38,7 +38,7 @@ $('#btnAddBotanicGarden').click(function () {
     $('#botId').hide();
     $('#AddBotanicG').css('display', 'block');
     $('#btnUpdateBotanicG').css('display', 'none');
-    $('#BotanicGHeading').text('Add Employee Page');
+    $('#BotanicGHeading').text('Add Botanic Garden Page');
 })
 function AddBotanicG() {
     var objData = {
@@ -52,7 +52,7 @@ function AddBotanicG() {
         type: 'Post',
         data: objData,
         contentType: 'application/x-www-form-urlencoded;charset=utf-8;',
-        datatype: 'json',
+        dataType: 'json',
         success: function () {
             alert('Registration Successful ');
             ClearTextBox();

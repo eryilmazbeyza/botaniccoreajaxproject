@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/tNXE5oo55ifnX59jHwFgfeFWi6etXiIdHQSwXrbmC4=",
+  "Hash": "4Wv1M+7BVWFeOqXKZL4Ixngfipc5YypYA23lefJz0VQ=",
   "Source": "botaniccoreajaxproject",
   "BasePath": "_content/botaniccoreajaxproject",
   "Mode": "Default",
@@ -848,6 +848,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\botaniccrud.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\wwwroot\\js\\plantscrud.js",
+      "SourceId": "botaniccoreajaxproject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\wwwroot\\",
+      "BasePath": "_content/botaniccoreajaxproject",
+      "RelativePath": "js/plantscrud.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\plantscrud.js"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

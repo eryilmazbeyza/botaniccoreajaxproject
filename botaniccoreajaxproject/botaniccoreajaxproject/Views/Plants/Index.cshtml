@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<button class="btn btn-sm btn-primary m-2" id="btnAddPlants">Add Plant</button>
+
+<table class="table table-bordered">
+    <thead>
+        <tr class="text-center">
+            <th>PlantId</th>
+            <th>PlantName</th>
+            <th>PlantDescription</th>
+            <th>PlantType</th>
+            <th>PlantCount</th>
+            <th>PlantOrigin</th>
+            <th>Operation</th>
+        </tr>
+    </thead>
+    <tbody class="text-center" id="table_data"></tbody>
+</table>
+<div class="madal fade modal" id="PlantsModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="text-info modal-title" id="PlantsHeading">Add Plant</h1>
+                <button class="close text-danger" onclick="HideModalPopUp();" data-dismiss="modal">&times;</button> @* çarpı işaretini veren buton *@
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="form-group" id="plaId">
+                        <label>PlantId</label>
+                        <input type="text" class="form-control" id="PlantId" disabled="disabled" />
+                    </div>
+                    <div class="form-group">
+                        <label>PlantName</label>
+                        <input type="text" placeholder="Enter Plant Name" class="form-control" id="PlantName" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>PlantDescription</label>
+                        <input type="text" placeholder="Enter Plant Description" class="form-control" id="PlantDescription" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>PlantType</label>
+                        <input type="text" placeholder="Enter Plant Type" class="form-control" id="PlantType" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>PlantCount</label>
+                        <input type="text" placeholder="Enter Plant Count" class="form-control" id="PlantCount" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label>PlantOrigin</label>
+                        <input type="text" placeholder="Enter Plant Origin" class="form-control" id="PlantOrigin" autocomplete="off" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="AddPlants();" id="AddPlants">Save</button>
+                <button class="btn btn-warning" onclick="UpdatePlants();" style="display:none" id="btnUpdatePlants">Update</button>
+                <button class="btn btn-danger btn-default" onclick="HideModalPopUp();" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <input type="hidden" id="urlPlantsData" value="@Url.Action("PlantsList","Plants")" />
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/plantscrud.js"></script>
+
