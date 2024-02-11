@@ -11046,11 +11046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\botaniccoreajaxproject.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\botaniccoreajaxproject\\botaniccoreajaxproject\\botaniccoreajaxproject\\botaniccoreajaxproject.csproj",
       "projectName": "botaniccoreajaxproject",
-      "projectPath": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\botaniccoreajaxproject.csproj",
+      "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\botaniccoreajaxproject\\botaniccoreajaxproject\\botaniccoreajaxproject\\botaniccoreajaxproject.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\botaniccoreajaxproject\\botaniccoreajaxproject\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\botaniccoreajaxproject\\botaniccoreajaxproject\\botaniccoreajaxproject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11131,7 +11131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
